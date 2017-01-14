@@ -1,0 +1,23 @@
+<h1>Hello from Rails!</h1>
+<p>
+	It is <%= @time %>
+</p>
+<p>
+	2+3 is <%= 3+2 %>
+</p>
+<p>
+	<%= 1.hour.from_now.localtime %>
+</p>
+<p>
+	<%= "cow"+"boy" %>
+</p>
+<p>
+	<%= @files %>
+	<hr>
+	<% @files.each do |file| %> file name is: 
+	<ul>	<%= file %> </ul>
+	<% end %>
+
+</p>
+<!-- <p>Say <a href="/say/goodbye">Goodbye</a>!</p> -->
+Time to say <%= link_to "Goodbye", say_goodbye_path %>!
